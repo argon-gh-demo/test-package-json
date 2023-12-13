@@ -7,8 +7,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      - name: npm i
-        run: npm i
       - name: Run Aqua scanner
         uses: docker://aquasec/aqua-scanner
         with:
