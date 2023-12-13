@@ -10,6 +10,7 @@ jobs:
       - name: Remove package-lock.json and Install NPM 
         run: | 
           rm package-lock.json
+          ls -al
           npm i
       - name: Run Aqua scanner
         uses: docker://aquasec/aqua-scanner
