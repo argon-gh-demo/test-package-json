@@ -7,6 +7,10 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+      - name: Remove package-lock.json and Install NPM 
+        run: | 
+          rm package-lock.json
+          npm i
       - name: Run Aqua scanner
         uses: docker://aquasec/aqua-scanner
         with:
