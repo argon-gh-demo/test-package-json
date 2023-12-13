@@ -12,6 +12,7 @@ jobs:
           rm package-lock.json
           ls -al
           npm i
+          ls -la
       - name: Run Aqua scanner
         uses: docker://aquasec/aqua-scanner
         with:
