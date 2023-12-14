@@ -9,8 +9,6 @@ jobs:
         uses: actions/checkout@v2
       - name: Remove package-lock.json and Install NPM 
         run: | 
-          rm package-lock.json
-          ls -al
           npm i
           ls -la
       - name: Run Aqua scanner
